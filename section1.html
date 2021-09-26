@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="section1.css">
-    <title>Document</title>
+    <title>Awaydoc</title>
 </head>
 
 <body>
@@ -16,8 +16,9 @@
             <a href="" class="navbar-brand text-primary ">
                 <h2><span style="color:gold">Away</span>doc</h2>
             </a>
+        </div>
     </nav>
-    </div>
+
 
     <div class="row ">
         <div class="container bg-primary text-center text-light ">
@@ -26,26 +27,37 @@
         </div>
     </div>
     <div class="container p-md-5 text-sm-center">
-        <p>Help us with relevant information to help us all through your journey on Awaydoc. Kindly provide correct and true answers to all the questions. <span style="color:rgb(32, 170, 32)">WOULD TAKE JUST 1 MINUTE </span>
-        </p>
-        <center>
-            <div class="card border-primary bg-primary mb-3" style="max-width: 30rem;">
-                <div class="card-body">
-                    <h5>
-                        <p style="color: antiquewhite;">Have you ever had a procedure?</p>
-                    </h5>
-                    <div class="row">
-                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-                        <label class="btn btn-light text-black" for="btn-check">Yes</label>
-                    </div>
-                    <div class="row">
-                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-                        <label class="btn btn-primary" for="btn-check">No</label>
-                    </div>
+        <div class="row">
 
+            <p>Help us with relevant information to help us all through your journey on Awaydoc. Kindly provide correct and true answers to all the questions. <span style="color:rgb(32, 170, 32)">WOULD TAKE JUST 1 MINUTE
+                </span>
+            </p>
+
+            <div class="card border-primary mb-3 col-md-6 mx-auto">
+                <div class="card-body">
+                    <form method="POST">
+                        <h5>
+                            Have you ever had a procedure?
+                        </h5>
+                        <div class="row mb-3">
+                            <input type="checkbox" class="btn-check" id="btn-check">
+                            <label class="btn btn-light text-black" for="btn-check">Yes</label>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="checkbox" class="btn-check" id="btn-check1">
+                            <label class="btn btn-primary" for="btn-check">No</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-        </center>
+
+        </div>
 
     </div>
 
