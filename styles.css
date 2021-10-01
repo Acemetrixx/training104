@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #24495e;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+.css-button-rounded {
+    background: #df0f5f;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    border-radius: 50px;
+    float: right;
+    margin-top: 20px;
+}
+
+.css-button-rounded:hover {
+    background: #df0f5f;
+    color: aqua;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: rgb(131, 128, 128);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid red transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    border: 1px solid rgb(109, 105, 105);
+}
+
+nav #icon {
+    color: rgb(59, 118, 228);
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 909px) {
+    nav #icon {
+        display: block;
+    }
+    label.logo {
+        font-size: 18px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #042d66;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active,
+    a:hover {
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+section {
+    background-color: slateblue;
+    background-size: cover;
+    height: calc(100vh - 800px);
+}
